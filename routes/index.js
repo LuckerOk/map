@@ -14,7 +14,7 @@ router.delete('/markers/:id', markersController.deleteMarker);
 //user
 router.get('/users', usersController.getUsers);
 router.get('/users/:id', usersController.getUser);
-router.get('/users/profile', authCheck, usersController.getProfile);
+router.get('/users/data/profile', authCheck, usersController.getProfile);
 router.post('/users/signup', usersController.createUser);
 router.post('/users/signin', usersController.authUser);
 router.patch('/users/:id', usersController.patchUser);

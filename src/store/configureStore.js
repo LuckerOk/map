@@ -5,7 +5,7 @@ import { routerMiddleware } from 'react-router-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 import logics from '../logic';
-// import reducers from '../reducers';
+import reducers from '../reducers';
 
 export const history = createHistory();
 const logicMiddleware = createLogicMiddleware(logics);
@@ -14,4 +14,4 @@ const middlewares = [
   logicMiddleware,
   reactRouterMiddleware
 ];
-export const configureStore = createStore(composeWithDevTools(applyMiddleware(...middlewares)));
+export const configureStore = createStore(reducers, composeWithDevTools(applyMiddleware(...middlewares)));

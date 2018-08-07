@@ -6,9 +6,11 @@
     "start": "webpack-dev-server --open --watch",
     "server": "nodemon ./bin/www",
     "precommit": "npm run lint",
-    "lint": "eslint --ext .jsx,.js src/"
+    "lint": "eslint --ext .jsx,.js src/",
+    "fix": "eslint --fix --ext .jsx,.js src/"
   },
   "dependencies": {
+    "@material-ui/core": "^1.4.3",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "connect-history-api-fallback": "^1.5.0",

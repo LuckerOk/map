@@ -12,10 +12,7 @@ module.exports = {
       template: './src/index.html'
     }),
     new CleanWebpackPlugin(['build']),
-    new LiveReloadPlugin(),
-    new webpack.DefinePlugin({
-      'process.env.API_URL': JSON.stringify('http://localhost:3000')
-    })
+    new LiveReloadPlugin()
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
