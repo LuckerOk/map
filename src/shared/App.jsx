@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from './Header.component';
+import Header from './Header.container';
 
 const App = props => (
   <div>
